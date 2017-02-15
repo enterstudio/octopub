@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/fishpercolator/CKAN
+  revision: e963fd97cee5b56e353bddb5f84189694433edeb
+  specs:
+    ckan (0.0.3)
+
+GIT
   remote: https://github.com/pezholio/grape-swagger-rails.git
   revision: 2b474ff5f848906b67674edae9eff1a822d04312
   branch: change-layout-test-branch
@@ -495,6 +501,7 @@ DEPENDENCIES
   bootstrap-select-rails
   bootstrap_form
   certificate-factory
+  ckan!
   coderay
   coveralls!
   csv2json!

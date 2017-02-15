@@ -22,6 +22,8 @@ gem 'csv2json', git: 'https://github.com/theodi/csv2json.git'
 gem 'csv2rest', git: 'https://github.com/theodi/csv2rest.git'
 gem 'alternate_rails', '~> 5.0.0', git: 'https://github.com/theodi/alternate-rails.git'
 gem 'grape-swagger-rails', git: 'https://github.com/pezholio/grape-swagger-rails.git', branch: 'change-layout-test-branch'
+# Forked ckan gem
+gem 'ckan', git: 'https://github.com/fishpercolator/CKAN'
 
 gem 'csvlint'
 gem 'omniauth-github'
