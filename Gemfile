@@ -3,17 +3,17 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
 gem 'pg'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 # Git hosted gems
 gem 'csv2json', git: 'https://github.com/theodi/csv2json.git'
@@ -35,7 +35,7 @@ gem 'omniauth-github'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
-gem 'rails-bootstrap-helpers'
+gem 'rails-bootstrap-helpers', '>= 0.1.0'
 gem 'bootstrap-select-rails'
 gem 'bootstrap_form'
 gem "bootstrap-table-rails"
@@ -44,11 +44,11 @@ gem "bootstrap-table-rails"
 gem 'awesome_print'
 
 # API functionality
-gem 'grape'
-gem 'grape-route-helpers'
+gem 'grape', '>= 0.19.1'
+gem 'grape-route-helpers', '>= 2.0.0'
 # There are breaking changes in 0.26.1 so freeze here for now
 gem 'grape-swagger', '0.26.0'
-gem 'grape-swagger-entity', '~> 0.1.5'
+gem 'grape-swagger-entity', '~> 0.1.6'
 
 # Markdown processing, rendering & syntax highlighting
 gem 'redcarpet'
@@ -72,7 +72,7 @@ gem 'sidekiq'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.2.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -83,22 +83,22 @@ group :development do
   gem 'pry-remote'
   gem 'letter_opener'
   gem 'term-ansicolor'
-  gem 'annotate'
+  gem 'annotate', '>= 2.7.1'
   gem 'better_errors'
   gem 'binding_of_caller'
 
   # Adds some nice rake tasks for generating migrations
-  gem 'lol_dba'
+  gem 'lol_dba', '>= 2.1.1'
 end
 
 group :development, :test do
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'bundler-audit'
 
   # Spring speeds up development by keeping your application running
   # in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-commands-rspec'
+  gem 'spring', '>= 2.0.1'
+  gem 'spring-commands-rspec', '>= 1.0.4'
   gem 'guard'
   gem 'guard-rspec', require: false
   gem 'guard-rails', require: false
@@ -107,17 +107,17 @@ end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.5.2'
   gem 'pry'
   gem 'poltergeist'
   gem 'faker'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.8.0'
   gem 'coveralls', '~> 0.8.20'
   gem 'vcr'
   gem 'webmock'
   gem 'foreman'
   # Rails 5 has pulled out 'assigns' - this puts it back
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.1'
 end
 
 group :production do
