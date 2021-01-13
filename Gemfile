@@ -28,7 +28,7 @@ gem 'csvlint', git: 'https://github.com/jamesjefferies/csvlint.rb.git', branch: 
 gem 'jsontableschema'
 
 # User related
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 
 # Bootstrap and view stuff
@@ -51,7 +51,7 @@ gem 'grape-swagger', '0.26.0'
 gem 'grape-swagger-entity', '~> 0.1.5'
 
 # Markdown processing, rendering & syntax highlighting
-gem 'redcarpet'
+gem 'redcarpet', '>= 3.5.1'
 gem 'rouge'
 gem 'coderay'
 
