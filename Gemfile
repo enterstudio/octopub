@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,7 +35,7 @@ gem 'omniauth-github'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
-gem 'rails-bootstrap-helpers'
+gem 'rails-bootstrap-helpers', '>= 0.1.0'
 gem 'bootstrap-select-rails'
 gem 'bootstrap_form'
 gem "bootstrap-table-rails"
