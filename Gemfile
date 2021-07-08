@@ -59,8 +59,8 @@ gem 'coderay'
 gem 'airbrake'
 
 # External services
-gem 'twitter'
-gem 'octokit'
+gem 'twitter', '>= 5.17.0'
+gem 'octokit', '>= 4.6.2'
 gem 'git'
 gem 'odlifier'
 gem 'aws-sdk', '~> 2'
@@ -81,7 +81,7 @@ end
 
 group :development do
   gem 'pry-remote'
-  gem 'letter_opener'
+  gem 'letter_opener', '>= 1.4.1'
   gem 'term-ansicolor'
   gem 'annotate'
   gem 'better_errors'
@@ -109,12 +109,12 @@ group :test do
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'pry'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.14.0'
   gem 'faker'
   gem 'factory_girl_rails'
   gem 'coveralls', '~> 0.8.20'
   gem 'vcr'
-  gem 'webmock'
+  gem 'webmock', '>= 2.3.2'
   gem 'foreman'
   # Rails 5 has pulled out 'assigns' - this puts it back
   gem 'rails-controller-testing'
