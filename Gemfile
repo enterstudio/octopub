@@ -68,7 +68,7 @@ gem 'pusher'
 gem 'certificate-factory'
 
 # Queues
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.2.1'
 
 # General stuff
 gem 'open_uri_redirections'
