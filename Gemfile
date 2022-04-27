@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.2.7', '>= 5.2.7.1'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -72,7 +72,7 @@ gem 'sidekiq'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.2.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -92,7 +92,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'bundler-audit'
 
   # Spring speeds up development by keeping your application running
