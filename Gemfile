@@ -28,7 +28,7 @@ gem 'csvlint', git: 'https://github.com/jamesjefferies/csvlint.rb.git', branch: 
 gem 'jsontableschema'
 
 # User related
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 
 # Bootstrap and view stuff
