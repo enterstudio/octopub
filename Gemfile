@@ -5,7 +5,7 @@ ruby '2.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
