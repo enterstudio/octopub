@@ -61,7 +61,7 @@ gem 'airbrake'
 # External services
 gem 'twitter'
 gem 'octokit'
-gem 'git'
+gem 'git', '>= 1.13.0'
 gem 'odlifier'
 gem 'aws-sdk', '~> 2'
 gem 'pusher'
