@@ -3,9 +3,9 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.1'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
@@ -13,7 +13,7 @@ gem 'pg'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 # Git hosted gems
 gem 'csv2json', git: 'https://github.com/theodi/csv2json.git'
@@ -48,7 +48,7 @@ gem 'grape'
 gem 'grape-route-helpers'
 # There are breaking changes in 0.26.1 so freeze here for now
 gem 'grape-swagger', '0.26.0'
-gem 'grape-swagger-entity', '~> 0.1.5'
+gem 'grape-swagger-entity', '~> 0.1.6'
 
 # Markdown processing, rendering & syntax highlighting
 gem 'redcarpet'
@@ -72,7 +72,7 @@ gem 'sidekiq'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.7.6'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -83,7 +83,7 @@ group :development do
   gem 'pry-remote'
   gem 'letter_opener'
   gem 'term-ansicolor'
-  gem 'annotate'
+  gem 'annotate', '>= 2.7.5'
   gem 'better_errors'
   gem 'binding_of_caller'
 
@@ -92,7 +92,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'bundler-audit'
 
   # Spring speeds up development by keeping your application running
@@ -117,7 +117,7 @@ group :test do
   gem 'webmock'
   gem 'foreman'
   # Rails 5 has pulled out 'assigns' - this puts it back
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :production do
