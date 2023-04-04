@@ -3,17 +3,17 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
 gem 'pg'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 # Git hosted gems
 gem 'csv2json', git: 'https://github.com/theodi/csv2json.git'
@@ -28,11 +28,11 @@ gem 'csvlint', git: 'https://github.com/jamesjefferies/csvlint.rb.git', branch: 
 gem 'jsontableschema'
 
 # User related
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 
 # Bootstrap and view stuff
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'bootstrap-sass', '~> 3.4.0'
 gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
 gem 'rails-bootstrap-helpers'
@@ -44,14 +44,14 @@ gem "bootstrap-table-rails"
 gem 'awesome_print'
 
 # API functionality
-gem 'grape'
-gem 'grape-route-helpers'
+gem 'grape', '>= 1.1.0'
+gem 'grape-route-helpers', '>= 2.1.0'
 # There are breaking changes in 0.26.1 so freeze here for now
 gem 'grape-swagger', '0.26.0'
-gem 'grape-swagger-entity', '~> 0.1.5'
+gem 'grape-swagger-entity', '~> 0.1.6'
 
 # Markdown processing, rendering & syntax highlighting
-gem 'redcarpet'
+gem 'redcarpet', '>= 3.5.1'
 gem 'rouge'
 gem 'coderay'
 
@@ -59,32 +59,32 @@ gem 'coderay'
 gem 'airbrake'
 
 # External services
-gem 'twitter'
+gem 'twitter', '>= 6.0.0'
 gem 'octokit'
-gem 'git'
+gem 'git', '>= 1.13.0'
 gem 'odlifier'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2', '>= 2.8.9'
 gem 'pusher'
 gem 'certificate-factory'
 
 # Queues
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.2.1'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.7.6'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0.0'
 end
 
 group :development do
   gem 'pry-remote'
   gem 'letter_opener'
   gem 'term-ansicolor'
-  gem 'annotate'
-  gem 'better_errors'
+  gem 'annotate', '>= 2.7.5'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
 
   # Adds some nice rake tasks for generating migrations
@@ -92,7 +92,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'bundler-audit'
 
   # Spring speeds up development by keeping your application running
@@ -117,10 +117,10 @@ group :test do
   gem 'webmock'
   gem 'foreman'
   # Rails 5 has pulled out 'assigns' - this puts it back
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :production do
   gem 'rails_12factor'
-  gem 'puma'
+  gem 'puma', '>= 4.3.12'
 end
