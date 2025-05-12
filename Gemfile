@@ -3,9 +3,9 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 7.0.0'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
@@ -44,7 +44,7 @@ gem "bootstrap-table-rails"
 gem 'awesome_print'
 
 # API functionality
-gem 'grape'
+gem 'grape', '>= 2.1.0'
 gem 'grape-route-helpers'
 # There are breaking changes in 0.26.1 so freeze here for now
 gem 'grape-swagger', '0.26.0'
@@ -68,7 +68,7 @@ gem 'pusher'
 gem 'certificate-factory'
 
 # Queues
-gem 'sidekiq'
+gem 'sidekiq', '>= 6.1.0'
 
 # General stuff
 gem 'open_uri_redirections'
