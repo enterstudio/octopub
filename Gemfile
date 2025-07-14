@@ -3,17 +3,17 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 7.1.0'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
 gem 'pg'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 # Git hosted gems
 gem 'csv2json', git: 'https://github.com/theodi/csv2json.git'
@@ -28,7 +28,7 @@ gem 'csvlint', git: 'https://github.com/jamesjefferies/csvlint.rb.git', branch: 
 gem 'jsontableschema'
 
 # User related
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
 
 # Bootstrap and view stuff
@@ -44,11 +44,11 @@ gem "bootstrap-table-rails"
 gem 'awesome_print'
 
 # API functionality
-gem 'grape'
-gem 'grape-route-helpers'
+gem 'grape', '>= 0.19.2'
+gem 'grape-route-helpers', '>= 2.1.0'
 # There are breaking changes in 0.26.1 so freeze here for now
-gem 'grape-swagger', '0.26.0'
-gem 'grape-swagger-entity', '~> 0.1.5'
+gem 'grape-swagger', '0.26.1'
+gem 'grape-swagger-entity', '~> 0.2.0'
 
 # Markdown processing, rendering & syntax highlighting
 gem 'redcarpet'
@@ -60,7 +60,7 @@ gem 'airbrake'
 
 # External services
 gem 'twitter'
-gem 'octokit'
+gem 'octokit', '>= 4.7.0'
 gem 'git'
 gem 'odlifier'
 gem 'aws-sdk', '~> 2'
@@ -72,52 +72,52 @@ gem 'sidekiq'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.7.6'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0.0'
 end
 
 group :development do
   gem 'pry-remote'
-  gem 'letter_opener'
+  gem 'letter_opener', '>= 1.5.0'
   gem 'term-ansicolor'
-  gem 'annotate'
-  gem 'better_errors'
+  gem 'annotate', '>= 2.7.5'
+  gem 'better_errors', '>= 2.2.0'
   gem 'binding_of_caller'
 
   # Adds some nice rake tasks for generating migrations
-  gem 'lol_dba'
+  gem 'lol_dba', '>= 2.1.2'
 end
 
 group :development, :test do
-  gem 'lograge'
+  gem 'lograge', '>= 0.9.0'
   gem 'bundler-audit'
 
   # Spring speeds up development by keeping your application running
   # in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'guard'
+  gem 'guard', '>= 2.14.2'
   gem 'guard-rspec', require: false
-  gem 'guard-rails', require: false
+  gem 'guard-rails', '>= 0.8.1', require: false
   gem 'terminal-notifier-guard', '~> 1.6.1'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'pry'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.15.0'
   gem 'faker'
-  gem 'factory_girl_rails'
-  gem 'coveralls', '~> 0.8.20'
+  gem 'factory_girl_rails', '>= 4.9.0'
+  gem 'coveralls', '~> 0.8.21'
   gem 'vcr'
   gem 'webmock'
   gem 'foreman'
   # Rails 5 has pulled out 'assigns' - this puts it back
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.3'
 end
 
 group :production do
