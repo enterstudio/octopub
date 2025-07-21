@@ -3,15 +3,15 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 5.0.3'
 # Use SCSS for stylesheets
-gem 'sass-rails'
+gem 'sass-rails', '>= 5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Postgres default
 gem 'pg'
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.2'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
@@ -72,7 +72,7 @@ gem 'sidekiq'
 
 # General stuff
 gem 'open_uri_redirections'
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.2.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -88,34 +88,34 @@ group :development do
   gem 'binding_of_caller'
 
   # Adds some nice rake tasks for generating migrations
-  gem 'lol_dba'
+  gem 'lol_dba', '>= 2.1.2'
 end
 
 group :development, :test do
-  gem 'lograge'
-  gem 'bundler-audit'
+  gem 'lograge', '>= 0.5.0'
+  gem 'bundler-audit', '>= 0.7.0'
 
   # Spring speeds up development by keeping your application running
   # in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-commands-rspec'
-  gem 'guard'
+  gem 'guard', '>= 2.14.2'
   gem 'guard-rspec', require: false
-  gem 'guard-rails', require: false
+  gem 'guard-rails', '>= 0.8.1', require: false
   gem 'terminal-notifier-guard', '~> 1.6.1'
 end
 
 group :test do
   gem 'database_cleaner'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.6.0'
   gem 'pry'
   gem 'poltergeist'
   gem 'faker'
-  gem 'factory_girl_rails'
-  gem 'coveralls', '~> 0.8.20'
+  gem 'factory_girl_rails', '>= 4.9.0'
+  gem 'coveralls', '~> 0.8.23'
   gem 'vcr'
   gem 'webmock'
-  gem 'foreman'
+  gem 'foreman', '>= 0.86.0'
   # Rails 5 has pulled out 'assigns' - this puts it back
   gem 'rails-controller-testing'
 end
