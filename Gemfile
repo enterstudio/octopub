@@ -3,7 +3,7 @@ ruby '2.4.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -83,12 +83,12 @@ group :development do
   gem 'pry-remote'
   gem 'letter_opener'
   gem 'term-ansicolor'
-  gem 'annotate'
+  gem 'annotate', '>= 3.2.0'
   gem 'better_errors'
   gem 'binding_of_caller'
 
   # Adds some nice rake tasks for generating migrations
-  gem 'lol_dba'
+  gem 'lol_dba', '>= 2.1.2'
 end
 
 group :development, :test do
