@@ -28,7 +28,7 @@ gem 'csvlint', git: 'https://github.com/jamesjefferies/csvlint.rb.git', branch: 
 gem 'jsontableschema'
 
 # User related
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 1.3.0'
 
 
 # Bootstrap and view stuff
@@ -59,8 +59,8 @@ gem 'coderay'
 gem 'airbrake'
 
 # External services
-gem 'twitter'
-gem 'octokit'
+gem 'twitter', '>= 6.2.0'
+gem 'octokit', '>= 4.23.0'
 gem 'git'
 gem 'odlifier'
 gem 'aws-sdk', '~> 2'
